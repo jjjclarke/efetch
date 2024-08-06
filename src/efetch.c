@@ -44,6 +44,8 @@ void checkOS() {
         os = "Ubuntu";
     } else if(os.find("Debian") != std::string::npos) {
        os = "Debian";
+    } else if(os.find("openSUSE") != std::string::npos) {
+        os = "openSUSE";
     } else {
         // if the method hasn't returned yet, set the variables to fallback ones, because there is no supported OS found. 
         os = osName;
